@@ -1,0 +1,26 @@
+scheme_id,scheme_name,min_age,max_age,land_size,crop_type,max_income_lpa,location,irrigation_required,farming_type,eligible_label
+1,PM Kisan Samman Nidhi,18,99,small;medium;large,any,1.5,any,any,any,1
+2,Pradhan Mantri Fasal Bima Yojana (PMFBY),18,99,small;medium;large,any,99,any,any,any,1
+3,Mahatma Jyotirao Phule Shetkari Karj Mukti Yojana,18,70,small;medium,any,1.5,any,any,any,1
+4,Namo Shetkari Mahasanman Nidhi,18,99,small;medium;large,any,2.0,any,any,any,1
+5,Atal Solar Krishi Pump Yojana,18,99,small;medium,any,99,any,no,any,1
+6,Mukhyamantri Saur Krishi Vahini Yojana,18,99,small;medium;large,any,99,Pune;Nashik;Aurangabad;Latur;Solapur,no,any,1
+7,Pradhan Mantri Krishi Sinchai Yojana (PMKSY),18,99,small;medium;large,any,99,any,yes,any,1
+8,Rashtriya Krishi Vikas Yojana (RKVY),18,99,small;medium;large,any,99,any,any,any,1
+9,Paramparagat Krishi Vikas Yojana (PKVY),18,99,small;medium,any,99,any,any,organic,1
+10,National Horticulture Mission,18,99,small;medium;large,fruits;vegetables;flowers,99,any,any,any,1
+11,Soil Health Card Scheme,18,99,small;medium;large,any,99,any,any,any,1
+12,Kisan Credit Card (KCC),18,75,small;medium;large,any,99,any,any,any,1
+13,Agri Infrastructure Fund,18,99,medium;large,any,99,any,any,any,1
+14,Maharashtra Shetkari Anudan Yojana,18,65,small,any,1.0,any,any,any,1
+15,Dr. Babasaheb Ambedkar Krishi Swavalamban Yojana,18,99,small;medium,any,1.5,any,no,any,1
+16,Birsa Munda Krishi Kranti Yojana,18,99,small;medium,any,1.5,Gadchiroli;Chandrapur;Nandurbar;Nashik;Amravati,any,any,1
+17,Nanaji Deshmukh Krishi Sanjivani Yojana,18,99,small;medium;large,any,99,Wardha;Yavatmal;Nanded;Osmanabad;Latur;Buldhana,any,any,1
+18,Jalyukt Shivar Abhiyan,18,99,small;medium;large,any,99,any,no,any,1
+19,Gopinath Munde Shetkari Apghat Vima Yojana,18,70,small;medium;large,any,99,any,any,any,1
+20,Pradhan Mantri Kisan Maandhan Yojana,18,40,small,any,99,any,any,any,1
+21,Maharashtra Organic Farming Scheme,18,99,small;medium,any,2.0,any,any,organic,1
+22,E-NAM (National Agriculture Market),18,99,small;medium;large,any,99,any,any,any,1
+23,Drip & Sprinkler Irrigation Subsidy,18,99,small;medium;large,any,99,any,yes,any,1
+24,Gokul Mission (for mixed farmers),18,99,small;medium;large,any,99,any,any,any,1
+25,Maharashtra State Grape Growing Scheme,18,99,small;medium;large,fruits,99,Nashik;Pune;Sangli;Solapur;Aurangabad,yes,any,1

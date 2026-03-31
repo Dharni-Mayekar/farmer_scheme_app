@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maharashtra Farmer Scheme Recommender | महाराष्ट्र शेतकरी योजना</title>
+<style>
+  :root{--green:#2e7d32;--light-green:#e8f5e9;--orange:#f57c00;--bg:#f9fbe7;--card:#fff;--shadow:0 2px 12px rgba(0,0,0,.08)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:#222}
+  header{background:linear-gradient(135deg,var(--green),#1b5e20);color:#fff;padding:20px 24px;text-align:center}
+  header h1{font-size:1.6rem;margin-bottom:4px}header p{font-size:.95rem;opacity:.85}
+  .lang-badge{display:inline-block;background:rgba(255,255,255,.2);border-radius:12px;padding:3px 10px;font-size:.8rem;margin-top:6px}
+  .container{max-width:900px;margin:24px auto;padding:0 16px}
+  .card{background:var(--card);border-radius:12px;padding:24px;box-shadow:var(--shadow);margin-bottom:20px}
+  .card h2{color:var(--green);margin-bottom:16px;font-size:1.15rem;border-bottom:2px solid var(--light-green);padding-bottom:8px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  label{display:block;font-size:.85rem;font-weight:600;color:#555;margin-bottom:4px}
+  .sublabel{font-size:.75rem;color:#999;font-weight:400}
+  input,select{width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:8px;font-size:.95rem;transition:.2s}
+  input:focus,select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(46,125,50,.12)}
+  .btn{display:block;width:100%;padding:14px;background:var(--green);color:#fff;border:none;border-radius:10px;font-size:1.05rem;font-weight:700;cursor:pointer;margin-top:8px;letter-spacing:.3px;transition:.2s}
+  .btn:hover{background:#1b5e20;transform:translateY(-1px)}
+  .btn:active{transform:translateY(0)}
+  #result{display:none}
+  .result-header{background:linear-gradient(135deg,var(--green),#388e3c);color:#fff;border-radius:12px;padding:20px 24px;text-align:center;margin-bottom:16px}
+  .result-header .count{font-size:2.8rem;font-weight:800;display:block}
+  .result-header .count-label{font-size:.95rem;opacity:.9}
+  .scheme-card{border:1.5px solid #e0e0e0;border-radius:10px;padding:16px;margin-bottom:14px;position:relative;overflow:hidden}
+  .scheme-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}
+  .scheme-card.orange::before{background:var(--orange)}
+  .scheme-card.blue::before{background:#1565c0}
+  .scheme-name-en{font-weight:700;font-size:1rem;color:#111;margin-bottom:2px}
+  .scheme-name-mr{font-size:.9rem;color:var(--green);font-weight:600;margin-bottom:8px}
+  .badge{display:inline-block;background:var(--light-green);color:var(--green);border-radius:20px;padding:2px 10px;font-size:.75rem;font-weight:600;margin-bottom:8px}
+  .badge.conf{background:#fff3e0;color:var(--orange)}
+  .section-label{font-weight:700;font-size:.8rem;color:#888;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;margin-top:10px}
+  .benefit-box{background:#f5f5f5;border-radius:6px;padding:8px 10px;font-size:.88rem;margin-bottom:4px}
+  .docs-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .doc-chip{background:#e3f2fd;color:#1565c0;border-radius:16px;padding:3px 10px;font-size:.78rem}
+  .apply-box{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+  .apply-btn{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none;cursor:pointer}
+  .apply-btn.online{background:#e8f5e9;color:var(--green);border:1.5px solid #a5d6a7}
+  .apply-btn.offline{background:#fff3e0;color:var(--orange);border:1.5px solid #ffcc80}
+  .apply-btn:hover{filter:brightness(.95)}
+  .no-result{text-align:center;padding:30px;color:#888}
+  .spinner{display:none;text-align:center;padding:20px;font-size:1rem;color:var(--green)}
+  .error-box{background:#ffebee;color:#c62828;border-radius:8px;padding:12px;font-size:.9rem}
+  footer{text-align:center;padding:20px;color:#999;font-size:.8rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>🌾 Farmer Scheme Recommender</h1>
+  <p>शेतकरी योजना शिफारस प्रणाली | Maharashtra</p>
+  <span class="lang-badge">🇮🇳 English + मराठी</span>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>📋 Enter Farmer Details | शेतकरी माहिती भरा</h2>
+    <div class="grid">
+      <div>
+        <label>Full Name / पूर्ण नाव</label>
+        <input type="text" id="name" placeholder="e.g. Ramesh Patil" required>
+      </div>
+      <div>
+        <label>Age / वय <span class="sublabel">(years)</span></label>
+        <input type="number" id="age" placeholder="e.g. 35" min="18" max="100">
+      </div>
+      <div>
+        <label>Land Size / जमिनीचा आकार</label>
+        <select id="land_size">
+          <option value="small">Small (लहान) — upto 2 acres</option>
+          <option value="medium">Medium (मध्यम) — 2–5 acres</option>
+          <option value="large">Large (मोठा) — 5+ acres</option>
+        </select>
+      </div>
+      <div>
+        <label>Crop Type / पीक प्रकार</label>
+        <select id="crop_type">
+          <option value="rice">Rice / तांदूळ</option>
+          <option value="wheat">Wheat / गहू</option>
+          <option value="cotton">Cotton / कापूस</option>
+          <option value="sugarcane">Sugarcane / ऊस</option>
+          <option value="jowar">Jowar / ज्वारी</option>
+          <option value="fruits">Fruits / फळे</option>
+          <option value="vegetables">Vegetables / भाजीपाला</option>
+          <option value="flowers">Flowers / फुले</option>
+        </select>
+      </div>
+      <div>
+        <label>Annual Income / वार्षिक उत्पन्न <span class="sublabel">(in Lakhs ₹)</span></label>
+        <input type="number" id="income_lpa" placeholder="e.g. 1.5" step="0.1" min="0">
+      </div>
+      <div>
+        <label>District / जिल्हा</label>
+        <select id="district">
+          <option value="Pune">Pune / पुणे</option>
+          <option value="Nashik">Nashik / नाशिक</option>
+          <option value="Aurangabad">Aurangabad / औरंगाबाद</option>
+          <option value="Latur">Latur / लातूर</option>
+          <option value="Solapur">Solapur / सोलापूर</option>
+          <option value="Nagpur">Nagpur / नागपूर</option>
+          <option value="Kolhapur">Kolhapur / कोल्हापूर</option>
+          <option value="Amravati">Amravati / अमरावती</option>
+          <option value="Nanded">Nanded / नांदेड</option>
+          <option value="Yavatmal">Yavatmal / यवतमाळ</option>
+          <option value="Wardha">Wardha / वर्धा</option>
+          <option value="Buldhana">Buldhana / बुलढाणा</option>
+          <option value="Osmanabad">Osmanabad / उस्मानाबाद</option>
+          <option value="Sangli">Sangli / सांगली</option>
+          <option value="Gadchiroli">Gadchiroli / गडचिरोली</option>
+          <option value="Chandrapur">Chandrapur / चंद्रपूर</option>
+          <option value="Nandurbar">Nandurbar / नंदुरबार</option>
+          <option value="Other">Other / इतर</option>
+        </select>
+      </div>
+      <div>
+        <label>Irrigation / सिंचन</label>
+        <select id="irrigation">
+          <option value="yes">Available / उपलब्ध</option>
+          <option value="no">Not Available / उपलब्ध नाही</option>
+        </select>
+      </div>
+      <div>
+        <label>Farming Type / शेतीचा प्रकार</label>
+        <select id="farming_type">
+          <option value="traditional">Traditional / पारंपरिक</option>
+          <option value="organic">Organic / सेंद्रिय</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn" onclick="predict()">🔍 Find Eligible Schemes | पात्र योजना शोधा</button>
+  </div>
+
+  <div class="spinner" id="spinner">⏳ Checking eligibility... / पात्रता तपासत आहे...</div>
+
+  <div id="result">
+    <div class="result-header">
+      <span class="count" id="count">0</span>
+      <span class="count-label">Eligible Schemes Found | पात्र योजना सापडल्या</span>
+      <div style="font-size:.85rem;opacity:.8;margin-top:6px" id="farmer-name-display"></div>
+    </div>
+    <div id="schemes-list"></div>
+  </div>
+</div>
+
+<footer>Maharashtra Farmer Scheme Recommender &bull; For informational use &bull; Always verify eligibility officially</footer>
+
+<script>
+const ACCENT = ['','','orange','blue','','orange','blue','',''];
+async function predict(){
+  const name=document.getElementById('name').value.trim();
+  const age=document.getElementById('age').value;
+  const income=document.getElementById('income_lpa').value;
+  if(!name||!age||!income){alert('Please fill all fields / कृपया सर्व माहिती भरा');return;}
+  document.getElementById('spinner').style.display='block';
+  document.getElementById('result').style.display='none';
+  const payload={name,age:parseFloat(age),income_lpa:parseFloat(income),
+    land_size:document.getElementById('land_size').value,
+    crop_type:document.getElementById('crop_type').value,
+    district:document.getElementById('district').value,
+    irrigation:document.getElementById('irrigation').value,
+    farming_type:document.getElementById('farming_type').value};
+  try{
+    const res=await fetch('/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const data=await res.json();
+    document.getElementById('spinner').style.display='none';
+    if(data.status==='error'){document.getElementById('schemes-list').innerHTML=`<div class="error-box">Error: ${data.message}</div>`;document.getElementById('result').style.display='block';return;}
+    document.getElementById('count').textContent=data.count;
+    document.getElementById('farmer-name-display').textContent=`Farmer: ${name} | शेतकरी: ${name}`;
+    const list=document.getElementById('schemes-list');
+    if(data.count===0){list.innerHTML='<div class="no-result">No schemes matched your profile. Please contact your local Agriculture Office.<br>कोणतीही योजना जुळली नाही. स्थानिक कृषी कार्यालयाशी संपर्क करा.</div>';}
+    else{
+      list.innerHTML=data.schemes.map((s,i)=>{
+        const acc=i%3===1?'orange':i%3===2?'blue':'';
+        const docs=s.documents.map(d=>`<span class="doc-chip">${d}</span>`).join('');
+        return `<div class="scheme-card ${acc}">
+          <span class="badge conf">⚡ ${s.confidence}% match</span>
+          <span class="badge" style="margin-left:6px">${s.category}</span>
+          <div class="scheme-name-en">📌 ${s.name_en}</div>
+          <div class="scheme-name-mr">📌 ${s.name_mr}</div>
+          <div class="section-label">💰 Benefit / फायदा</div>
+          <div class="benefit-box">${s.benefit_en}</div>
+          <div class="benefit-box" style="font-size:.85rem;color:#555">${s.benefit_mr}</div>
+          <div class="section-label">📄 Required Documents / आवश्यक कागदपत्रे</div>
+          <div class="docs-list">${docs}</div>
+          <div class="section-label">📍 How to Apply / अर्ज कसा करावा</div>
+          <div class="apply-box">
+            <a class="apply-btn online" href="${s.apply_online}" target="_blank">🌐 Apply Online / ऑनलाइन अर्ज</a>
+            <span class="apply-btn offline">🏢 ${s.apply_offline}</span>
+          </div>
+        </div>`;
+      }).join('');
+    }
+    document.getElementById('result').style.display='block';
+    document.getElementById('result').scrollIntoView({behavior:'smooth'});
+  }catch(e){
+    document.getElementById('spinner').style.display='none';
+    alert('Connection error. Please try again.');
+  }
+}
+</script>
+</body>
+</html>

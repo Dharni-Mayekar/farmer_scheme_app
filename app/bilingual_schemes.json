@@ -1,0 +1,355 @@
+{
+  "1": {
+    "name_en": "PM Kisan Samman Nidhi",
+    "name_mr": "पीएम किसान सन्मान निधी",
+    "benefit_en": "₹6,000/year in 3 installments of ₹2,000 directly to bank account",
+    "benefit_mr": "बँक खात्यात थेट ₹2,000 च्या 3 हप्त्यांमध्ये वार्षिक ₹6,000",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Bank Passbook / बँक पासबुक",
+      "Land Record (7/12) / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://pmkisan.gov.in",
+    "apply_offline": "Visit nearest Common Service Centre (CSC) / जवळच्या CSC केंद्रात जा",
+    "category": "Income Support"
+  },
+  "2": {
+    "name_en": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "name_mr": "प्रधानमंत्री फसल विमा योजना",
+    "benefit_en": "Crop insurance at very low premium; covers natural calamities, pests, diseases",
+    "benefit_mr": "अत्यंत कमी प्रीमियमवर पीक विमा; नैसर्गिक आपत्ती, कीड, रोगांपासून संरक्षण",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Bank Account / बँक खाते",
+      "Land Record / जमिनीचा उतारा",
+      "Sowing Certificate / पेरणी प्रमाणपत्र"
+    ],
+    "apply_online": "https://pmfby.gov.in",
+    "apply_offline": "Apply at bank/CSC before crop season starts / पीक हंगाम सुरू होण्यापूर्वी बँक/CSC मध्ये अर्ज करा",
+    "category": "Insurance"
+  },
+  "3": {
+    "name_en": "Mahatma Jyotirao Phule Shetkari Karj Mukti Yojana",
+    "name_mr": "महात्मा ज्योतिराव फुले शेतकरी कर्जमुक्ती योजना",
+    "benefit_en": "Loan waiver up to ₹2 lakh for small/medium farmers with income below ₹1.5 LPA",
+    "benefit_mr": "लहान/मध्यम शेतकऱ्यांसाठी ₹2 लाखांपर्यंत कर्जमाफी",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Bank loan documents / बँक कर्ज कागदपत्रे",
+      "Land Record / जमिनीचा उतारा",
+      "Income Certificate / उत्पन्न प्रमाणपत्र"
+    ],
+    "apply_online": "https://aaplesarkar.mahaonline.gov.in",
+    "apply_offline": "Visit district Agriculture Office / जिल्हा कृषी कार्यालयात जा",
+    "category": "Debt Relief"
+  },
+  "4": {
+    "name_en": "Namo Shetkari Mahasanman Nidhi",
+    "name_mr": "नमो शेतकरी महासन्मान निधी",
+    "benefit_en": "₹6,000/year additional benefit from Maharashtra state (on top of PM Kisan)",
+    "benefit_mr": "महाराष्ट्र राज्याकडून अतिरिक्त ₹6,000/वर्ष (PM किसान व्यतिरिक्त)",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "PM Kisan registration / PM किसान नोंदणी",
+      "Bank Account / बँक खाते"
+    ],
+    "apply_online": "https://nsmny.mahait.org",
+    "apply_offline": "Visit nearest Taluka Agriculture Office / जवळच्या तालुका कृषी कार्यालयात जा",
+    "category": "Income Support"
+  },
+  "5": {
+    "name_en": "Atal Solar Krishi Pump Yojana",
+    "name_mr": "अटल सौर कृषी पंप योजना",
+    "benefit_en": "95% subsidy on solar pump installation for small/medium farmers without grid power",
+    "benefit_mr": "वीज नसलेल्या लहान/मध्यम शेतकऱ्यांसाठी सौर पंप बसवण्यावर 95% अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "No electricity connection proof / वीज जोडणी नसल्याचा पुरावा"
+    ],
+    "apply_online": "https://www.mahadiscom.in/solar",
+    "apply_offline": "Apply at MSEDCL office / MSEDCL कार्यालयात अर्ज करा",
+    "category": "Solar / Energy"
+  },
+  "6": {
+    "name_en": "Mukhyamantri Saur Krishi Vahini Yojana",
+    "name_mr": "मुख्यमंत्री सौर कृषी वाहिनी योजना",
+    "benefit_en": "Daytime solar power supply to agricultural feeders in selected districts",
+    "benefit_mr": "निवडक जिल्ह्यांमध्ये कृषी वाहिन्यांना दिवसा सौर वीज पुरवठा",
+    "documents": [
+      "Electricity bill / वीज बिल",
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://www.mahadiscom.in",
+    "apply_offline": "Contact local MSEDCL office / स्थानिक MSEDCL कार्यालयाशी संपर्क करा",
+    "category": "Solar / Energy"
+  },
+  "7": {
+    "name_en": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+    "name_mr": "प्रधानमंत्री कृषी सिंचाई योजना",
+    "benefit_en": "Subsidy for micro-irrigation (drip/sprinkler); \"More crop per drop\" initiative",
+    "benefit_mr": "ठिबक/तुषार सिंचनासाठी अनुदान; \"अधिक पीक प्रति थेंब\" उपक्रम",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Bank Account / बँक खाते"
+    ],
+    "apply_online": "https://pmksy.gov.in",
+    "apply_offline": "Visit district Agriculture Office / जिल्हा कृषी कार्यालयात जा",
+    "category": "Irrigation"
+  },
+  "8": {
+    "name_en": "Rashtriya Krishi Vikas Yojana (RKVY)",
+    "name_mr": "राष्ट्रीय कृषी विकास योजना",
+    "benefit_en": "Infrastructure development grants; farm mechanisation and allied activities funding",
+    "benefit_mr": "पायाभूत सुविधा विकास अनुदान; शेती यंत्रीकरण निधी",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Project proposal / प्रकल्प प्रस्ताव",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://rkvy.nic.in",
+    "apply_offline": "Contact district Agriculture Officer / जिल्हा कृषी अधिकाऱ्याशी संपर्क करा",
+    "category": "Development"
+  },
+  "9": {
+    "name_en": "Paramparagat Krishi Vikas Yojana (PKVY)",
+    "name_mr": "परंपरागत कृषी विकास योजना",
+    "benefit_en": "₹50,000/hectare over 3 years for organic farming cluster groups",
+    "benefit_mr": "सेंद्रिय शेती गटांसाठी 3 वर्षांत प्रति हेक्टर ₹50,000",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Farmer group registration / शेतकरी गट नोंदणी"
+    ],
+    "apply_online": "https://pgsindia-ncof.gov.in",
+    "apply_offline": "Form Cluster Group & apply at Agriculture Office / गट तयार करून कृषी कार्यालयात अर्ज करा",
+    "category": "Organic Farming"
+  },
+  "10": {
+    "name_en": "National Horticulture Mission",
+    "name_mr": "राष्ट्रीय फलोत्पादन अभियान",
+    "benefit_en": "25–50% subsidy on horticulture inputs, infrastructure, and technology",
+    "benefit_mr": "फलोत्पादन निविष्ठा, पायाभूत सुविधा आणि तंत्रज्ञानावर 25–50% अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Crop details / पिकाचा तपशील"
+    ],
+    "apply_online": "https://nhb.gov.in",
+    "apply_offline": "Contact district Horticulture Office / जिल्हा फलोत्पादन कार्यालयाशी संपर्क करा",
+    "category": "Horticulture"
+  },
+  "11": {
+    "name_en": "Soil Health Card Scheme",
+    "name_mr": "माती आरोग्य कार्ड योजना",
+    "benefit_en": "Free soil testing + personalised fertilizer recommendations every 2 years",
+    "benefit_mr": "दर 2 वर्षांनी विनामूल्य माती परीक्षण + वैयक्तिक खत शिफारसी",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://soilhealth.dac.gov.in",
+    "apply_offline": "Register at nearest Krishi Vigyan Kendra / जवळच्या KVK मध्ये नोंदणी करा",
+    "category": "Soil & Inputs"
+  },
+  "12": {
+    "name_en": "Kisan Credit Card (KCC)",
+    "name_mr": "किसान क्रेडिट कार्ड",
+    "benefit_en": "Short-term credit up to ₹3 lakh at 4% interest rate for crop expenses",
+    "benefit_mr": "पीक खर्चासाठी 4% व्याज दराने ₹3 लाखांपर्यंत अल्पकालीन कर्ज",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Bank Account / बँक खाते",
+      "Passport Photo / पासपोर्ट फोटो"
+    ],
+    "apply_online": "https://pmkisan.gov.in/KCC.aspx",
+    "apply_offline": "Apply at any nationalized bank / कोणत्याही राष्ट्रीयकृत बँकेत अर्ज करा",
+    "category": "Credit / Finance"
+  },
+  "13": {
+    "name_en": "Agri Infrastructure Fund",
+    "name_mr": "कृषी पायाभूत सुविधा निधी",
+    "benefit_en": "Loans up to ₹2 crore at 3% interest subvention for post-harvest infrastructure",
+    "benefit_mr": "काढणीपश्चात पायाभूत सुविधांसाठी 3% व्याज सवलतीसह ₹2 कोटीपर्यंत कर्ज",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Project Report / प्रकल्प अहवाल",
+      "Bank Account / बँक खाते"
+    ],
+    "apply_online": "https://agriinfra.dac.gov.in",
+    "apply_offline": "Apply at NABARD or bank / NABARD किंवा बँकेत अर्ज करा",
+    "category": "Credit / Finance"
+  },
+  "14": {
+    "name_en": "Maharashtra Shetkari Anudan Yojana",
+    "name_mr": "महाराष्ट्र शेतकरी अनुदान योजना",
+    "benefit_en": "Input subsidy for small farmers with income below ₹1 LPA in Maharashtra",
+    "benefit_mr": "₹1 LPA पेक्षा कमी उत्पन्न असलेल्या महाराष्ट्रातील लहान शेतकऱ्यांसाठी निविष्ठा अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Income Certificate / उत्पन्न प्रमाणपत्र",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://aaplesarkar.mahaonline.gov.in",
+    "apply_offline": "Visit Tehsildar office / तहसीलदार कार्यालयात जा",
+    "category": "State Scheme"
+  },
+  "15": {
+    "name_en": "Dr. Babasaheb Ambedkar Krishi Swavalamban Yojana",
+    "name_mr": "डॉ. बाबासाहेब आंबेडकर कृषी स्वावलंबन योजना",
+    "benefit_en": "Irrigation & infrastructure subsidy for SC/NT farmers without irrigation access",
+    "benefit_mr": "सिंचन सुविधा नसलेल्या SC/NT शेतकऱ्यांसाठी सिंचन व पायाभूत सुविधा अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Caste Certificate / जात प्रमाणपत्र",
+      "Land Record / जमिनीचा उतारा",
+      "Income Certificate / उत्पन्न प्रमाणपत्र"
+    ],
+    "apply_online": "https://aaplesarkar.mahaonline.gov.in",
+    "apply_offline": "Visit Social Welfare Office / समाज कल्याण कार्यालयात जा",
+    "category": "Social Welfare"
+  },
+  "16": {
+    "name_en": "Birsa Munda Krishi Kranti Yojana",
+    "name_mr": "बिरसा मुंडा कृषी क्रांती योजना",
+    "benefit_en": "Agricultural development for ST farmers in tribal districts; well + pump subsidy",
+    "benefit_mr": "आदिवासी जिल्ह्यांतील ST शेतकऱ्यांसाठी कृषी विकास; विहीर + पंप अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Tribe Certificate / जनजाती प्रमाणपत्र",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://tribal.maharashtra.gov.in",
+    "apply_offline": "Visit Tribal Development Office / आदिवासी विकास कार्यालयात जा",
+    "category": "Tribal Welfare"
+  },
+  "17": {
+    "name_en": "Nanaji Deshmukh Krishi Sanjivani Yojana",
+    "name_mr": "नानाजी देशमुख कृषी संजीवनी योजना",
+    "benefit_en": "Climate resilience project for drought-prone districts; crop diversification support",
+    "benefit_mr": "दुष्काळग्रस्त जिल्ह्यांसाठी हवामान लवचीकता प्रकल्प; पीक विविधीकरण सहाय्य",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "District eligibility proof / जिल्हा पात्रता पुरावा"
+    ],
+    "apply_online": "https://mahaagri.gov.in",
+    "apply_offline": "Contact Project Implementation Unit / प्रकल्प अंमलबजावणी युनिटशी संपर्क करा",
+    "category": "Climate Resilience"
+  },
+  "18": {
+    "name_en": "Jalyukt Shivar Abhiyan",
+    "name_mr": "जलयुक्त शिवार अभियान",
+    "benefit_en": "Watershed development and water conservation works in villages",
+    "benefit_mr": "गावांमध्ये पाणलोट विकास आणि जलसंधारण कामे",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Village registration / गाव नोंदणी"
+    ],
+    "apply_online": "https://aaplesarkar.mahaonline.gov.in",
+    "apply_offline": "Apply at Gram Panchayat / ग्रामपंचायतीत अर्ज करा",
+    "category": "Water Conservation"
+  },
+  "19": {
+    "name_en": "Gopinath Munde Shetkari Apghat Vima Yojana",
+    "name_mr": "गोपीनाथ मुंडे शेतकरी अपघात विमा योजना",
+    "benefit_en": "₹2 lakh accident insurance for farmers aged 10–75; covers death & disability",
+    "benefit_mr": "10–75 वर्षे वयाच्या शेतकऱ्यांसाठी ₹2 लाख अपघात विमा; मृत्यू व अपंगत्व",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Bank Account / बँक खाते"
+    ],
+    "apply_online": "https://aaplesarkar.mahaonline.gov.in",
+    "apply_offline": "Auto-enrolled; claim at district collectorate / स्वयंचलित नोंदणी; जिल्हाधिकारी कार्यालयात दावा करा",
+    "category": "Insurance"
+  },
+  "20": {
+    "name_en": "Pradhan Mantri Kisan Maandhan Yojana",
+    "name_mr": "प्रधानमंत्री किसान मानधन योजना",
+    "benefit_en": "₹3,000/month pension after age 60 for small farmers who enroll before 40",
+    "benefit_mr": "40 वर्षांपूर्वी नोंदणी केलेल्या लहान शेतकऱ्यांना वयाच्या 60 नंतर ₹3,000/माह निवृत्ती वेतन",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Bank Account / बँक खाते",
+      "Land Record / जमिनीचा उतारा"
+    ],
+    "apply_online": "https://pmkmy.gov.in",
+    "apply_offline": "Visit nearest CSC center / जवळच्या CSC केंद्रात जा",
+    "category": "Pension"
+  },
+  "21": {
+    "name_en": "Maharashtra Organic Farming Scheme",
+    "name_mr": "महाराष्ट्र सेंद्रिय शेती योजना",
+    "benefit_en": "Financial assistance and certification support for organic farmers",
+    "benefit_mr": "सेंद्रिय शेतकऱ्यांसाठी आर्थिक सहाय्य आणि प्रमाणीकरण सहाय्य",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Organic farming declaration / सेंद्रिय शेती घोषणा"
+    ],
+    "apply_online": "https://mahaagri.gov.in",
+    "apply_offline": "Contact Agriculture Extension Officer / कृषी विस्तार अधिकाऱ्याशी संपर्क करा",
+    "category": "Organic Farming"
+  },
+  "22": {
+    "name_en": "e-NAM (National Agriculture Market)",
+    "name_mr": "ई-NAM (राष्ट्रीय कृषी बाजार)",
+    "benefit_en": "Online trading platform; sell produce at best price without middlemen",
+    "benefit_mr": "ऑनलाइन व्यापार व्यासपीठ; दलालांशिवाय सर्वोत्तम किंमतीला उत्पादन विका",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Bank Account / बँक खाते",
+      "Mobile number / मोबाइल नंबर"
+    ],
+    "apply_online": "https://enam.gov.in",
+    "apply_offline": "Register at nearest APMC / जवळच्या APMC मध्ये नोंदणी करा",
+    "category": "Market Access"
+  },
+  "23": {
+    "name_en": "Drip & Sprinkler Irrigation Subsidy",
+    "name_mr": "ठिबक व तुषार सिंचन अनुदान",
+    "benefit_en": "55–80% subsidy on drip/sprinkler irrigation system installation",
+    "benefit_mr": "ठिबक/तुषार सिंचन प्रणाली बसवण्यावर 55–80% अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Water source proof / पाण्याच्या स्रोताचा पुरावा"
+    ],
+    "apply_online": "https://mahadbt.maharashtra.gov.in",
+    "apply_offline": "Apply at Taluka Agriculture Office / तालुका कृषी कार्यालयात अर्ज करा",
+    "category": "Irrigation"
+  },
+  "24": {
+    "name_en": "Gokul Mission (for Mixed Farmers)",
+    "name_mr": "गोकुळ मिशन (मिश्र शेतकऱ्यांसाठी)",
+    "benefit_en": "Cattle breed improvement, dairy infrastructure, and milk production support",
+    "benefit_mr": "गुरांच्या जातीत सुधारणा, दुग्धव्यवसाय पायाभूत सुविधा, दूध उत्पादन सहाय्य",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Cattle ownership proof / जनावरांच्या मालकीचा पुरावा",
+      "Bank Account / बँक खाते"
+    ],
+    "apply_online": "https://dahd.nic.in",
+    "apply_offline": "Visit Animal Husbandry Office / पशुसंवर्धन कार्यालयात जा",
+    "category": "Animal Husbandry"
+  },
+  "25": {
+    "name_en": "Maharashtra State Grape Growing Scheme",
+    "name_mr": "महाराष्ट्र राज्य द्राक्ष लागवड योजना",
+    "benefit_en": "Subsidy on grape cultivation inputs, training, and export support in select districts",
+    "benefit_mr": "निवडक जिल्ह्यांमध्ये द्राक्ष लागवड निविष्ठा, प्रशिक्षण आणि निर्यात सहाय्यावर अनुदान",
+    "documents": [
+      "Aadhaar Card / आधार कार्ड",
+      "Land Record / जमिनीचा उतारा",
+      "Irrigation proof / सिंचन पुरावा"
+    ],
+    "apply_online": "https://mahaagri.gov.in",
+    "apply_offline": "Contact Horticulture Department / फलोत्पादन विभागाशी संपर्क करा",
+    "category": "Horticulture"
+  }
+}
